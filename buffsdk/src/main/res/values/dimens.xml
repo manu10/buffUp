@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="headerSectionHeight">20dp</dimen>
+    <dimen name="countdownSize">32dp</dimen>
+    <dimen name="countdownTextSize">10sp</dimen>
+    <dimen name="questionBackgroundPadding">10dp</dimen>
+    <dimen name="cornerRadius">16dp</dimen>
+    <dimen name="answerIndexSize">22dp</dimen>
+    <dimen name="answer_text_size">12sp</dimen>
+    <dimen name="buffViewMargin">4dp</dimen>
+    <dimen name="buffAnswerMarginBottom">4dp</dimen>
+    <dimen name="closeBackgroundPadding" />
+</resources>

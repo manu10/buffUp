@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="@color/authorBackground" />
+
+    <corners android:radius="@dimen/cornerRadius" />
+
+    <padding
+        android:bottom="@dimen/questionBackgroundPadding"
+        android:left="@dimen/questionBackgroundPadding"
+        android:right="@dimen/questionBackgroundPadding"
+        android:top="@dimen/questionBackgroundPadding" />
+</shape>

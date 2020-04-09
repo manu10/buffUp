@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/authorBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/author_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/authorName"
+        app:layout_constraintEnd_toEndOf="@id/authorName"
+        app:layout_constraintStart_toStartOf="@id/authorImage"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/authorImage"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/authorName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/authorName"
+        tools:src="@drawable/abc_vector_test" />
+
+    <TextView
+        android:id="@+id/authorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/authorImage"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Manuel Garcia" />
+
+    <ImageView
+        android:id="@+id/closeIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/close_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_close_black_24dp" />
+
+    <View
+        android:id="@+id/questionBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/question_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/questionText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/questionText"
+        app:layout_constraintTop_toTopOf="@id/questionText"/>
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/countdown"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/authorName"
+        tools:text="Why Marcelo Bielsa is still using a translator? " />
+
+    <douglasspgyn.com.github.circularcountdown.CircularCountdown
+        android:id="@+id/countdown"
+        android:layout_width="@dimen/countdownSize"
+        android:layout_height="@dimen/countdownSize"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:countdownBackgroundColor="@color/countdownBackground"
+        app:countdownForegroundColor="@color/countdownForeground"
+        app:countdownTextColor="@android:color/white"
+        app:countdownTextSize="@dimen/countdownTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintTop_toTopOf="@id/questionText" />
+
+    <LinearLayout
+        android:id="@+id/answersContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/questionBackground"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

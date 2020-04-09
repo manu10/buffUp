@@ -1,0 +1,6 @@
+rootProject.name='Buffup'
+include ':app'
+include ':data'
+include ':usecases'
+include ':domain'
+include ':buffsdk'

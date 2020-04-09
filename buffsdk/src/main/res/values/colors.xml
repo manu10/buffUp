@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="countdownForeground">#F44336</color>
+    <color name="countdownBackground">#95959580</color>
+    <color name="questionBackground">#B30A0A0A</color>
+    <color name="authorBackground">#DC707070</color>
+</resources>
