@@ -1,7 +1,6 @@
 # Buffup SDK for Android
 
 This repository includes the sdk that provides a custom view to show Buffs which should be displayed over a video.
-It was developed as part of [Buff UP LTD Android Dev. Test](https://github.com/buffup/AndroidTechTest)
 
 ## Architecture
 
